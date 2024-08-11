@@ -57,7 +57,20 @@ button{
     align-items: center;
     justify-content: left;
     flex-wrap: wrap;
-    
+}
+
+.container-conteudo > p{
+    width: 53%;
+    text-align: justify;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffffd7;
+    margin: 30px 0px;
+}
+
+.titulo{
+    width: 100%;
 }
 
 .titulo > small {
