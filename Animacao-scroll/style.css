@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+section{
+    height: 100vh;
+}
+
+#primeira{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
