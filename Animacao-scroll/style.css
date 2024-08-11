@@ -6,7 +6,7 @@
 }
 
 section{
-    height: 100vh;
+    height: 101vh;
     background-color: black;
 }
 
@@ -39,11 +39,12 @@ section{
     }
 }
 
-#segunda{
+.hidden{
     opacity: 0;
-    filter: blur(15px);
-    transform: translateX(-100%);
-    transition: all 2s;
+}
+
+.show{
+    opacity: 1;
 }
 
 .avatar{
