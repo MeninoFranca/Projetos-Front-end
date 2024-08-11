@@ -13,6 +13,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
 
 .interface{
@@ -46,6 +47,32 @@ button{
     border: 2px solid #fff;
     color: #fff;
     font-size: 15px;
+}
+
+.conteudo{
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    
+}
+
+.titulo > small {
+    font-size: 60px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 250;
+    color: #ffffffd7;
+}
+
+.titulo > h2{
+    margin-top: -10px;
+    font-size: 60px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #ffffffd7;
 }
 
 @media (max-width: 1300px) {
