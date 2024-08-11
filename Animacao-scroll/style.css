@@ -5,15 +5,19 @@
     
 }
 
-section{
-    height: 101vh;
+body{
     background-color: black;
+    
 }
 
-#primeira{
+section{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 101vh;
+}
+
+#primeira{
     font-family: "Poppins", sans-serif;
     font-weight: 800;
     font-style: normal;
@@ -41,14 +45,37 @@ section{
 
 .hidden{
     opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+    transform: translateX(-100%);
 }
 
 .show{
     opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    transition: all 2s;
 }
 
 .avatar{
+    width: 150px;
     height: 200px;
     background-color: #fff;
     border-radius: 10px;
+    margin: 5px;
+}
+
+.logos{
+    display: flex;
+    gap: 20px;
+}
+
+.logos :nth-child(1){
+    transition: 1000ms;
+}
+.logos :nth-child(2){
+    transition: 3000ms;
+}
+.logos :nth-child(3){
+    transition: 5000ms;
 }
