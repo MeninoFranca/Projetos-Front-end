@@ -23,5 +23,15 @@ section{
     text-transform: uppercase;
     background: linear-gradient(45deg,#00e3cc,#32ab9c,#009688,#44E303);
     background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
 }
 
+@keyframes degrade {
+    0%{
+        background-position-x: 0;
+    }
+
+    100%{
+        background-position: 400%;
+    }
+}
