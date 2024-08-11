@@ -7,6 +7,7 @@
 
 section{
     height: 100vh;
+    background-color: black;
 }
 
 #primeira{
@@ -21,9 +22,11 @@ section{
 .header{
     font-size: 135px;
     text-transform: uppercase;
-    background: linear-gradient(45deg,#00e3cc,#32ab9c,#009688,#44E303);
+    background: linear-gradient(45deg,#00e3cc,#32ab9c,#009688,#06eea1);
     background-size: 400% 100%;
-    animation: degrade 10s linear infinite alternate;
+    animation: degrade 8s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @keyframes degrade {
@@ -34,4 +37,17 @@ section{
     100%{
         background-position: 400%;
     }
+}
+
+#segunda{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 2s;
+}
+
+.avatar{
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
 }
