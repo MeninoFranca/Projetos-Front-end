@@ -1,0 +1,93 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: black;
+    
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 101vh;
+}
+
+#primeira{
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.header{
+    font-size: 135px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg,#00e3cc,#32ab9c,#009688,#06eea1);
+    background-size: 400% 100%;
+    animation: degrade 8s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes degrade {
+    0%{
+        background-position-x: 0;
+    }
+
+    100%{
+        background-position: 400%;
+    }
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0);
+    transition: all 2s;
+}
+
+.avatar{
+    width: 150px;
+    height: 200px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 5px;
+}
+
+.logos{
+    display: flex;
+    gap: 20px;
+}
+
+.logos :nth-child(1){
+    transition: 1000ms;
+}
+.logos :nth-child(2){
+    transition: 2000ms;
+}
+.logos :nth-child(3){
+    transition: 3000ms;
+}
+
+@media (max-width: 1220px) {
+    .header{
+        font-size: 10vw;
+    }
+}
+
+@media (max-width: 540px){
+    .logos{
+        flex-direction: column;
+    }
+}
