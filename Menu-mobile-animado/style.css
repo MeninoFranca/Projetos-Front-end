@@ -1,113 +1,168 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    width: 100vw;
-    height: 100vh;
-    background-image: url('imgs/bg-inicio-site.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('imgs/bg-inicio-site.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden; /* Evita rolagem horizontal */
 }
 
-.interface{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 50px;
+.interface {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
 }
 
-.logo-branca{
-    width: 50px;
+.logo-branca {
+  width: 50px;
 }
 
-ul{
-    display: flex;
-    list-style-type: none;
+ul {
+  list-style: none;
 }
 
-li > a{
-    margin: 70px;
-    text-decoration: none;
-    font-size: 20px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    color: #ffffffd7;
+.menu-desktop ul {
+  display: flex;
 }
 
-button{
-    padding: 13px 30px;
-    background-color: transparent;
-    border: 2px solid #fff;
-    color: #fff;
-    font-size: 15px;
+.menu-desktop li > a {
+  margin: 0 20px;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffffd7;
 }
 
-.conteudo{
-    width: 70vw;
-    height: 70vh;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    flex-wrap: wrap;
+button {
+  padding: 13px 30px;
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 15px;
 }
 
-.container-conteudo > p{
-    width: 53%;
-    text-align: justify;
-    font-size: 20px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    color: #ffffffd7;
-    margin: 30px 0px;
+.conteudo {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
-.titulo{
-    width: 100%;
+.container-conteudo > p {
+  width: 80%;
+  max-width: 800px;
+  text-align: justify;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #ffffffd7;
+  margin: 30px 0;
+}
+
+.titulo {
+  width: 100%;
 }
 
 .titulo > small {
-    font-size: 60px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 250;
-    color: #ffffffd7;
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 250;
+  color: #ffffffd7;
 }
 
-.titulo > h2{
-    margin-top: -10px;
-    font-size: 60px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    color: #ffffffd7;
+.titulo > h2 {
+  margin-top: -10px;
+  font-size: 60px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  color: #ffffffd7;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+.menu-toggle {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 8px;
+  list-style: none;
+  width: 200px;
+}
+
+.mobile-menu li {
+  margin: 10px 0;
+}
+
+.mobile-menu.open {
+  display: block;
+}
+
+.mobile-menu li > a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.mobile-contact button {
+  width: 100%;
 }
 
 @media (max-width: 1300px) {
-    .interface{
-        flex-direction: column;
-        justify-content: center;
-    }
-    ul{
-        flex-direction: column;
-        margin: 30px;
-    }
-    li{
-        margin-bottom: 20px;
-    }
-    li > a{
-        margin: 0px;
-    }
+  .interface {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+  
+  .menu-desktop, .btn-contato {
+    display: none;
+  }
 
-    .menu-mobile{
-        
-    }
-    .menu-desktop{
-       display: none;
-    }
+  .container-conteudo > p{
+    margin: 40px;
+    
+  }
+  
+  .menu-mobile {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .titulo > small {
+    font-size: 40px;
+  }
+
+  .titulo > h2 {
+    font-size: 40px;
+  }
 }
