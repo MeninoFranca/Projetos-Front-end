@@ -1,4 +1,5 @@
 const express = require("express");
+const cors = require('cors')
 const app = express();
 const port = 3500;
 
@@ -35,7 +36,7 @@ const bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-
+app.use(cors())
 app.use("/", Disciplina);
 app.use("/", Aluno);
 app.use("/", Avaliacao);
