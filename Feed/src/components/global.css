@@ -1,0 +1,21 @@
+:root{
+    --white: #eee;
+    --gray-100: #e1e1e6;
+    --gray-200: #8d8d99;
+    --gray-300: #29292e;
+    --gray-400: #121214;
+
+    --Green: #00875f;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--gray-400);
+    color:var(--gray-200);
+    -webkit-font-smoothing:antiliased;
+}
