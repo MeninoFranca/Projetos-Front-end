@@ -1,0 +1,27 @@
+.bannerAempresa{
+    background: url(../../img/fundo/aempresa.jpg) no-repeat fixed;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    max-width: 100%;
+}
+
+.bannerAempresa div h1 {
+    
+    color: #ffffff;
+    font-size: 2.925em; 
+    font-weight: 700;
+    letter-spacing: 6px;
+    text-shadow: black 2px 2px;
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+/*
+.bgc-empresa {
+
+    background-image: url(../../img/fundo/fundocano.png)
+}*/

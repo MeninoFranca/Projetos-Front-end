@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imgs/fivicon.png" type="image/x-icon">
+    <title>Acopla Indústria de Embalagens</title>
+    <!--Fontes-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+
+    <!--BootStrap and css-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <!--Scripts bootstrap and jquery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <!--Font awesome-->
+    <script src="https://kit.fontawesome.com/5cb7311230.js" crossorigin="anonymous"></script>
+    <!--Progress bar-->
+    <script src="js/progressbar.min.js"></script>
+    <!--Parallax-->
+</head>
+
+<body>
+
+    
+    <header>
+        <div class="container" id="nav-container">
+            <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+                <a href="#" class="navbar-brand">
+                    <img id="logo" src="imgs/Acopla.png" alt=""> Acopla Indústria de
+                    Embalagens
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
+                    aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#" id="home-menu">Home</a>
+                        <a class="nav-item nav-link" href="#" id="about-menu">Sobre nós</a>
+                        <a class="nav-item nav-link" href="#" id="products-menu">Produtos</a>
+                        <a class="nav-item nav-link" href="#" id="services-menu">Serviços</a>
+                        <a class="nav-item nav-link" href="#" id="contact-menu">Contato</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid">
+            <!-- Slider -->
+            <div id="main-slide" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#main-slide" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#main-slide" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#main-slide" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner bg-dark">
+                    <div class="carousel-item active">
+                        <img src="https://www.azulpack.com.br/wp-content/uploads/2022/09/fabrica-de-embalagens.jpg" class="d-block w-100 opacity-50" alt="Embalagens" >
+                        <div class="carousel-caption d-md-block">
+                            <h2>Embalagens de Qualidade</h2>
+                            <p class="text-white">Descubra nossas embalagens inovadoras e de alta qualidade, projetadas
+                                para atender às necessidades da sua indústria.</p>
+                            <a href="#" target="_blank" class="main-btn">Saiba mais</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-dark">
+                        <img src="https://plasticovirtual.com.br/wp-content/uploads/2017/06/ind1.jpg" class="d-block w-100 opacity-50" alt="Produção">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Processos de Produção Modernos</h2>
+                            <p class="text-white">Conheça nossas instalações modernas e eficientes que garantem a
+                                produção de embalagens de alta qualidade.</p>
+                            <a href="#" target="_blank" class="main-btn">Explorar</a>
+                        </div>
+                    </div>
+                    <div class="carousel-item bg-dark">
+                        <img src="https://cpfabbri.com.br/wp-content/uploads/2022/05/Dicas-para-caminhoneiros.jpg" class="d-block w-100 opacity-50" alt="Entrega">
+                        <div class="carousel-caption d-md-block">
+                            <h2>Entrega Rápida e Confiável</h2>
+                            <p class="text-white">Com nossa logística eficiente, garantimos a entrega rápida e segura de
+                                suas embalagens em qualquer lugar do país.</p>
+                            <a href="#" target="_blank" class="main-btn">Saiba mais</a>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#main-slide" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#main-slide" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+            <!-- Sobre a empresa -->
+            <div id="about-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Sobre a Acopla</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="https://beltsistemas.com.br/wp-content/uploads/processo-para-indsstria-de-embalagens-plasticas-dicas-de-como-realizar-um-bom-planejamento.jpg" alt="Sobre a Acopla" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <h3 class="about-title">Inovação em Embalagens</h3>
+                            <p>Somos uma indústria líder no desenvolvimento e produção de embalagens inovadoras para
+                                diversos setores, incluindo alimentos, bebidas, cosméticos e produtos farmacêuticos.</p>
+                            <p>Nossas embalagens são projetadas com foco na qualidade, durabilidade e praticidade,
+                                atendendo às demandas de nossos clientes e garantindo a preservação dos produtos.</p>
+                            <p>Na Acopla, estamos comprometidos com a excelência em tudo o que fazemos, desde o design e
+                                desenvolvimento até a produção e entrega de nossos produtos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Produtos -->
+            <div id="products-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Nossos Produtos</h3>
+                        </div>
+                        <div class="col-md-4 product-box">
+                            <img src="https://www.sacosziplock.com.br/assets/img/img-mpi/embalagens-para-alimentos-2.jpg" class="img-fluid" alt="Embalagem 1">
+                            <br><br><h4>Embalagem para Alimentos</h4>
+                            <p>Embalagens duráveis e seguras para alimentos frescos e congelados.</p>
+                        </div>
+                        <div class="col-md-4 product-box">
+                            <img src="https://embaclass.com.br/img/slider/slider-1/bn-OMBRORETO-800X600.jpg" class="img-fluid" alt="Embalagem 2">
+                            <br><br><h4>Embalagem para Cosméticos</h4>
+                            <p>Embalagens elegantes e funcionais para produtos cosméticos e de cuidados pessoais.</p>
+                        </div>
+                        <div class="col-md-4 product-box">
+                            <img src="https://www.abre.org.br/wp-content/uploads/2020/11/bacardi.jpg" class="img-fluid" alt="Embalagem 3">
+                            <br><br><h4>Embalagem para Bebidas</h4>
+                            <p>Embalagens resistentes e atrativas para uma variedade de bebidas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Serviços -->
+            <div id="services-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Nossos Serviços</h3>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-shipping-fast"></i>
+                            <h4>Entrega Rápida</h4>
+                            <p>Garantimos a entrega rápida e segura de nossas embalagens em todo o país.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-toolbox"></i>
+                            <h4>Suporte Técnico</h4>
+                            <p>Nossa equipe de especialistas oferece suporte técnico para ajudar você a encontrar a
+                                embalagem certa para suas necessidades.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-certificate"></i>
+                            <h4>Qualidade Garantida</h4>
+                            <p>Nossas embalagens são fabricadas com materiais de alta qualidade e passam por rigor
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-cogs"></i>
+                            <h4>Customização Flexível</h4>
+                            <p>Oferecemos opções de customização flexíveis para atender às necessidades específicas de
+                                cada cliente.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-recycle"></i>
+                            <h4>Sustentabilidade</h4>
+                            <p>Comprometidos com o meio ambiente, nossas embalagens são produzidas com materiais
+                                recicláveis e biodegradáveis.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-dolly-flatbed"></i>
+                            <h4>Logística Integrada</h4>
+                            <p>Nossa logística integrada garante uma distribuição eficiente e pontual das embalagens até
+                                o destino final.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Serviços da empresa-->
+            <div id="services-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Especialidades</h3>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-box-open"></i>
+                            <h4>Embalagens Personalizadas</h4>
+                            <p>Nossas embalagens personalizadas são projetadas para atender às necessidades específicas
+                                de cada cliente. Com uma variedade de materiais e designs, garantimos embalagens que se
+                                destacam.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-recycle"></i>
+                            <h4>Sustentabilidade</h4>
+                            <p>Comprometidos com o meio ambiente, nossas embalagens são desenvolvidas com materiais
+                                recicláveis e biodegradáveis, contribuindo para um futuro mais sustentável.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-certificate"></i>
+                            <h4>Qualidade Garantida</h4>
+                            <p>Na Acople, a qualidade é nossa prioridade. Utilizamos os mais altos padrões de fabricação
+                                e realizamos rigorosos testes de qualidade para garantir que nossas embalagens atendam e
+                                superem as expectativas.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-truck-moving"></i>
+                            <h4>Distribuição Eficiente</h4>
+                            <p>Nossa logística de distribuição é eficiente e confiável, garantindo que suas embalagens
+                                cheguem ao destino final no prazo e em perfeitas condições.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-hands-helping"></i>
+                            <h4>Atendimento Personalizado</h4>
+                            <p>Nossa equipe dedicada está sempre disponível para oferecer suporte personalizado e
+                                orientação em todas as etapas, desde a concepção até a entrega final.</p>
+                        </div>
+                        <div class="col-md-4 service-box">
+                            <i class="fas fa-balance-scale"></i>
+                            <h4>Variedade de Tamanhos e Formatos</h4>
+                            <p>Oferecemos uma ampla gama de tamanhos e formatos de embalagens para atender às diversas
+                                necessidades de nossos clientes, desde pequenas empresas até grandes corporações.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="team-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h3 class="main-title">Nossa Equipe</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="https://c.pxhere.com/photos/29/3a/businessman_man_portrait_male_costume_business_office_office_style-718638.jpg!d" class="card-img-top"
+                                    alt="Foto de Felipe Oliveira">
+                                <div class="card-body">
+                                    <h5 class="card-title">Felipe Oliveira</h5>
+                                    <p class="card-text">Diretor Executivo. Com mais de 15 anos de experiência na
+                                        indústria de embalagem, Felipe lidera nossa empresa com uma visão estratégica e
+                                        um compromisso inabalável com a excelência.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="https://c.pxhere.com/photos/05/e8/woman_black_businesswoman_young_accounting_if_the_human_resources_entrepreneurship-706049.jpg!d" class="card-img-top" alt="Foto de Amanda Silva">
+                                <div class="card-body">
+                                    <h5 class="card-title">Amanda Silva</h5>
+                                    <p class="card-text">Diretora de Operações. Amanda é responsável por garantir que
+                                        nossos processos operacionais sejam eficientes e eficazes, garantindo uma
+                                        produção de alta qualidade e entregas pontuais.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="https://c.pxhere.com/photos/39/55/male_portrait_man_official_suit_smile_tie_open_door_church-659515.jpg!d" class="card-img-top" alt="Foto de Rafael Costa">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rafael Costa</h5>
+                                    <p class="card-text">Diretor de Marketing. Com uma paixão pela construção de marcas
+                                        fortes, Rafael lidera nossas iniciativas de marketing para aumentar a
+                                        visibilidade da nossa empresa e atrair novos clientes.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="https://c.pxhere.com/photos/dd/a6/business_man_businessman_corporate_suit_executive_successful_entrepreneur-675843.jpg!d" class="card-img-top" alt="Foto de Isabela Santos">
+                                <div class="card-body">
+                                    <h5 class="card-title">José Santos</h5>
+                                    <p class="card-text">Diretor de Desenvolvimento de Produtos. Focado em
+                                        impulsionar nossos produtos, trabalhando em estreita colaboração
+                                        com nossa equipe de design e produção para criar soluções de embalagens.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--Portifólio-->
+            <div id="portfolio-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h3 class="main-title">Conheça nossos projetos de Embalagem Acople</h3>
+                        </div>
+                        <div class="col-md-12" id="filter-btn-box">
+                            <button class="main-btn filter-btn all-btn active">Todos</button>
+                            <button class="main-btn filter-btn dev-btn">Desenvolvimento</button>
+                            <button class="main-btn filter-btn dsg-btn">Design</button>
+                            <button class="main-btn filter-btn seo-btn">SEO</button>
+                        </div>
+                        <div class="col-md-4 project-box dev">
+                            <img src="https://img.freepik.com/fotos-premium/embalagens-de-massas-modernas-e-simplistas-de-marcas-de-saude-na-moda_839182-6733.jpg" class="img-fluid" alt="Embalagem Acople - Projeto 1">
+                        </div>
+                        <div class="col-md-4 project-box dsg">
+                            <img src="https://img.freepik.com/fotos-premium/modelos-de-embalagens-e-marcas-de-generos-alimenticios_839035-312489.jpg" class="img-fluid" alt="Embalagem Acople - Projeto 2">
+                        </div>
+                        <div class="col-md-4 project-box seo">
+                            <img src="https://f.i.uol.com.br/fotografia/2023/05/01/168297871264503798cc7f8_1682978712_3x2_md.jpg" class="img-fluid" alt="Embalagem Acople - Projeto 3">
+                        </div>
+                        <div class="col-md-4 project-box dev">
+                            <img src="https://img.freepik.com/fotos-premium/embalagens-de-massas-modernas-e-simplistas-de-marcas-de-saude-na-moda_839182-6731.jpg" class="img-fluid" alt="Embalagem Acople - Projeto 4">
+                        </div>
+                        <div class="col-md-4 project-box dsg">
+                            <img src="https://f.i.uol.com.br/fotografia/2024/01/29/170653477465b7a776d84a3_1706534774_3x2_md.jpg" class="img-fluid" alt="Embalagem Acople - Projeto 5">
+                        </div>
+                        <div class="col-md-4 project-box ceo">
+                            <img src="https://img.freepik.com/fotos-premium/embalagens-de-massas-modernas-e-simplistas-de-marcas-de-saude-na-moda_839182-6734.jpg" class="img-fluid" alt="Embalagem Acople - Projeto 6">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--NewsLetter-->
+            <div id="news-area">
+                <div class="container">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Fique Atualizado com as Últimas Notícias</h3>
+                    </div>
+                    <p>Inscreva-se em nossa lista de e-mails e receba informações sobre as mais recentes inovações tecnológicas e seus avanços.</p>
+                    <form action="">
+                        <input type="email" class="form-control" name="email" id="email-input"
+                            placeholder="Seu melhor email">
+                        <input type="submit" id="news-btn" value="Inscrever">
+                    </form>
+                </div>
+            </div>
+            <!--Call to action-->
+            <div id="call-area">
+                <div class="container">
+                    <div class="row">
+                        <p>Orçamento sem compromisso</p>
+                        <button class="main-btn" id="call-btn">Orçamento</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!--rodapé-->
+    
+    <footer>
+        <div id="contact-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3 class="main-title">Entre em contato conosco</h3>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-phone"></i>
+                        <p><span class="contact-title">Ligue para:</span> (71)99999-9999</p>
+                        <p><span class="contact-title">Horários:</span> 8:00 - 17:00</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-envelope"></i>
+                        <p><span class="contact-title">Envie um Email:</span> contato@Acopla.com</p>
+                    </div>
+                    <div class="col-md-4 contact-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p><span class="contact-title">Venha conhecer nossos projetos:</span> Rua irlanda - 1324</p>
+                    </div>
+                    <div class="col-md-6" id="msg-box">
+                        <p>Deixe sua mensagem:</p>
+                    </div>
+                    <div class="col-md-6" id="contact-form">
+                        <form action="">
+                            <input type="email" class="form-control" placeholder="E-mail" name="email">
+                            <input type="text" name="texto" class="form-control" placeholder="assunto">
+                            <textarea class="form-control" rows="3" placeholder="Sua mensagem..."
+                                name="message"></textarea>
+                            <input type="submit" class="main-btn" value="enviar">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copy-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>Desenvolvido por <a href="https://github.com/meninofranca" target="_blank">França
+                                </a>. &copy; 2024 Empresa fictícia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="Content-Language" content="pt-br">
+
+    <title>ManuTec</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/bootstrap-xxs.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home/style.css">
+    <link rel="stylesheet" href="css/header/style.css">
+    <link rel="stylesheet" href="css/footer/style.css">
+    <link rel="stylesheet" href="css/aEmpresa/style.css">
+    <link rel="stylesheet" href="css/servicos/style.css">
+    <link rel="stylesheet" href="css/contatos/style.css">
+
+    <!-- Scripts -->
+    <script src="js/lib/jQuery/jquery.min.js"></script>
+    <script src="js/lib/Bootstrap/bootstrap.min.js"></script>
+    <script src="js/lib/AngularJS/angular.js"></script>
+    <script src="js/lib/AngularJS/angular-ui-router.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/lib/Google/style.js"></script>
+    <!--Fonte-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="glyphicons-halflings-regular.eot">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+
+</head>
+
+
+<body ng-app="routerApp">
+    <header class="container">
+        <div class="row">
+            <div class="col-xxs-12 col-xs-3 col-sm-6 col-md-6">
+                <figure class="logo-responsivo">
+                    <img src="img/logo.jpg" class="img-responsive">
+                </figure>
+            </div>
+            <div class="col-xxs-12 col-xs-9 col-sm-6 col-md-6 telefone">
+                <div class="telefoneStyle">
+                    <div class="contato1">
+                        <div class="bloco">
+                            <img class="media-object iconeImg" src="img/telefone.png">
+                        </div>
+                        <div class="bloco">
+                            <h4 class="titulo marZero">Comercial</h4>
+                            <p>(71)3553-3553</p>
+                        </div>
+                    </div>
+                    <div class="contato2">
+                        <div class="bloco">
+                            <img class="media-object iconeImg" src="img/celular.png">
+                        </div>
+                        <div class="bloco">
+                            <h4 class="titulo marZero">Celular</h4>
+                            <p>(71)98282-8282</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="row">
+            <nav class="navbar navbar-default fixed-top marBottom-0 bgc-white borda-left-none borda-right-none">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">ManuTec</a> <!--visible-xs-->
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right efeitoMenu">
+                        <li><a ui-sref="home">Home</a></li>
+                        <li><a ui-sref="empresa">A Empresa</a></li>
+                        <li><a ui-sref="nossoTrabalho">Serviços</a></li>
+                        <li><a ui-sref="contatos ">Contatos</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+
+    <main>
+        <div ui-view></div>
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid">
+            <p class="f075em marZero">
+                <a class="branco" href="https://www.linkedin.com/in/filipe-frança-a53196279/" target="_blank">Feito por:
+                    Filipe França</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

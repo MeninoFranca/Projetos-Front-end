@@ -1,0 +1,170 @@
+
+.negrito {
+    font-weight: 700;
+}
+
+.linha {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    border-top: 1px solid #eee;
+}
+
+.sombra-fraca{
+    -webkit-box-shadow: 20px 20px 20px -15px rgba(4,4,5,1);
+    -moz-box-shadow: 20px 20px 20px -15px rgba(4,4,5,1);
+    box-shadow: 20px 20px 20px -15px rgba(4,4,5,1);
+}
+
+.sombra-muito-fraca{
+    -webkit-box-shadow: 15px 15px 20px -15px rgba(4,4,5,1);
+    -moz-box-shadow: 15px 15px 20px -15px rgba(4,4,5,1);
+    box-shadow: 15px 15px 20px -15px rgba(4,4,5,1);
+}
+
+/* reset */
+body {    
+    font-size: 16px;
+}
+
+.fonteRobo {
+    font-family: 'Roboto', sans-serif;
+}
+
+.segoe {
+    font-family: "Segoe UI",Arial,sans-serif;
+}
+
+.featurette-divider {
+    margin: 80px 0;
+}
+
+.oveHidden {
+    overflow: hidden;
+}
+
+/* Cores de fundo */
+.bgc-white {
+    background-color: #ffffff;
+}
+
+.bg-grey {   
+    background-color: #f5f5f5;
+}
+
+.bg-degrade {
+    background: #00364f1a;   
+}
+
+.fundoLindo {
+    background-color: rgb(208, 221, 227);
+}
+
+/*cor de fonte*/
+
+.branco {
+    color: #ffffff;
+}
+
+.cAzul {
+    color: #324298;
+}
+
+/* Borda */
+
+.borderNome {
+    border: none;
+}
+
+.borda-left-none {
+    border-left: none;
+}
+
+.borda-right-none {
+    border-right: none;    
+}
+
+.borda-raio-13em {
+    border-radius: 1.3em;
+}
+
+/* Margin */ 
+
+.marZero {
+    margin: 0;
+}
+
+.marBottom-0 {
+    margin-bottom: 0;
+}
+
+.marTop-0 {
+    margin-top: 0;
+}
+
+/*padding*/
+
+.padZero {
+    padding: 0;
+}
+
+.padZeroRig {    
+    padding-right: 0px;
+}
+
+.padZeroLef {
+    padding-left: 0px;
+}
+
+.padZeroBottom {
+    padding-bottom: 0 !important ;
+}
+
+.padR1em {
+    padding-right: 1em;
+}
+.padL1em {
+    padding-left: 1em;
+}
+
+/*float*/
+
+.floatR {
+    float: right;
+}
+
+.floatL {
+    float: left;    
+}
+
+/*font-size*/
+
+.f2em {
+    font-size: 2em;
+}
+
+.f09em {
+    font-size: 0.9em
+}
+
+.f075em {
+    font-size: 0.75em
+}
+
+                        /* EFEITO */
+
+.zoom {    
+   /* overflow: hidden;*/
+    cursor: default;
+}
+
+.zoom:hover img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);    
+}
+
+.zoom img{
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+}
